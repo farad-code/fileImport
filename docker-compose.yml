@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=Admin123
+#    volumes:
+#      - db-data:/var/lib/postgresql/data
+#volumes:
+#  db_data:
+#    driver: local
